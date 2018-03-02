@@ -34,6 +34,61 @@
         "mySubnetIDs": {
             "Description": "Subnet IDs",
             "Type": "AWS::EC2::Subnet::Id"
+        },
+        "ContentAdminPassword": {
+            "Description": "The password for the initial Admin user for Tableau server",
+            "MinLength": "1",
+            "NoEcho": "true",
+            "Type": "String"
+        },
+        "ContentAdminUser": {
+            "Default": "admin",
+            "Description": "The name of the initial Admin user for Tableau server",
+            "MinLength": "1",
+            "Type": "String"
+        },
+        "RegCity": {
+            "Type": "String"
+        },
+        "RegCompany": {
+            "Type": "String"
+        },
+        "RegCountry": {
+            "Type": "String"
+        },
+        "RegDepartment": {
+            "Type": "String"
+        },
+        "RegEmail": {
+            "MinLength": "1",
+            "Type": "String"
+        },
+        "RegFirstName": {
+            "MinLength": "1",
+            "Type": "String"
+        },
+        "RegIndustry": {
+            "Type": "String"
+        },
+        "RegLastName": {
+            "MinLength": "1",
+            "Type": "String"
+        },
+        "RegPhone": {
+            "Type": "String"
+        },
+        "RegState": {
+            "Type": "String"
+        },
+        "RegTitle": {
+            "Type": "String"
+        },
+        "RegZip": {
+            "Type": "String"
+        },
+        "TableauServerLicenseKey": {
+            "Description": "License Key (leave blank for trial)",
+            "Type": "String"
         }
     },
     "Resources": {
