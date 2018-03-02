@@ -25,7 +25,7 @@
             ],
             "Description": "Select one of the possible instance types"
         },
-        "Ec2SecurityGroupLb": {
+        "Ec2SecurityGroup": {
             "Type": "AWS::EC2::SecurityGroup::Id",
             "Description": "The EC2 Security Group."
         },
@@ -111,7 +111,7 @@
                         },
                         "GroupSet": [
                             {
-                                "Ref": "Ec2SecurityGroupLb"
+                                "Ref": "Ec2SecurityGroup"
                             }
                         ]
                     }
